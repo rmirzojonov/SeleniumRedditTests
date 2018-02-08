@@ -19,9 +19,9 @@ namespace Selenium
         {
             driver.Navigate().GoToUrl(baseURL + url);
         }
-        public void GoToPostsPage()
+        public void GoToPostsPage(string userName)
         {
-            driver.Navigate().GoToUrl(baseURL + "user/neverthy/submitted/");
+            driver.Navigate().GoToUrl(baseURL + $"user/{userName}/submitted/");
         }
         public void GoToLastPostPage()
         {
